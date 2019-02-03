@@ -4,15 +4,15 @@ import { Text, View } from 'react-native';
 
 
 //2 - make a component
-const Header = () => {
+const Header = (props) => {
 
     //recebendo o componente textStyle definido no styles
     const { textStyle, viewStyle } = styles; 
 
     return (
         <View style={viewStyle}>
-            <Text style={textStyle}>Albums!</Text>
-        </View>
+            <Text style={textStyle}>{props.cabecalho}</Text>
+        </View> 
         
     );
 }

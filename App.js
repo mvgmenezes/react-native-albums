@@ -6,7 +6,7 @@ import Header from './src/components/header';
 
 
 const App = () => (
-    <Header />
+    <Header cabecalho={'Albums!'}/>
 );
 
 
