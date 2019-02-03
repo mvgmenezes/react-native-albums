@@ -1,29 +1,18 @@
-//var React = require('react');
-//var Text = require('react-native').Text;
-//var View = require('react-native').View;
-//var AppRegistry = require('react-native').AppRegistry;
-
+//1 -  import libaries form making a component
 import React from 'react';
-import { Text, AppRegistry } from 'react-native';
-//import { AppRegistry } from 'react-native'
+import { AppRegistry } from 'react-native';
+//Importando o modulo Header
+import Header from './src/components/header';
 
 
-//criando uma constante, sendo de acesso somente de leitura, nao permitindo alterar o valor (var)
-/*
-const App = function (){ 
-  return (
-      <Text>Meu primiero App</Text>
-  );
-};
-*/
 const App = () => (
-    <Text>Meu primiero App</Text>
+    <Header />
 );
 
 
 //Export App - This line solved my issue
 export default App;
 
-//registrando o componentem criado (App)
+//registrando o componentem criado (App), Somente o componente Raiz (Root) usa o AppRegistry
 //AppRegistry.registerComponent('app1', function(){ return App; });
 AppRegistry.registerComponent('app1', () => (App) );
