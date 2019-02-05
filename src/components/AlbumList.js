@@ -28,7 +28,10 @@ class AlbumList extends Component{
 
     renderAlbums(){
         //map ja realiza a interacao
-        return this.state.albums.map(album => <Text>{album.title}</Text>)
+        return this.state.albums.map(album => 
+            //adicionando uma key para nao apresentar erro no android
+            <Text key={album.title}>{album.title}</Text>
+        );
     }
 
     render(){
